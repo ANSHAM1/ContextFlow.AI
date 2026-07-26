@@ -1,6 +1,6 @@
-# 🧠 ResearchMind AI
+## ResearchMind AI
 
-> An intelligent AI research assistant powered by LLMs, RAG, and LangGraph for document understanding, reasoning, and context-aware answers.
+#### An intelligent AI research assistant powered by LLMs, RAG, and LangGraph for document understanding, reasoning, and context-aware answers.
 
 ![Python](https://img.shields.io/badge/Python-3.12+-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
@@ -9,9 +9,9 @@
 ![ChromaDB](https://img.shields.io/badge/ChromaDB-6E40C9?style=for-the-badge)
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
 
----
+#
 
-# 📖 Overview
+### ◈ Overview
 
 ResearchMind AI is a production-inspired AI research assistant that combines:
 
@@ -24,9 +24,9 @@ ResearchMind AI is a production-inspired AI research assistant that combines:
 
 The system allows users to upload documents, retrieve relevant information, and generate grounded answers instead of relying only on an LLM's internal knowledge.
 
----
+#
 
-# ❗ Problem
+### ◈ Problem
 
 Traditional LLM chatbots have limitations:
 
@@ -36,24 +36,24 @@ Traditional LLM chatbots have limitations:
 - Limited reasoning capabilities
 - No persistent conversation context
 
----
+#
 
-# 💡 Solution
+### ◈ Solution
 
 ResearchMind AI addresses these challenges by integrating several modern AI techniques into a unified system.
 
 The application:
 
-* Understands user intent using an LLM
-* Retrieves relevant information from uploaded documents using RAG
-* Stores semantic document embeddings in a vector database
-* Maintains conversational memory for contextual interactions
-* Uses AI Agents to plan and execute multi-step tasks(calculation, web search)
-* Produces grounded, explainable, and context-aware responses
+- Understands user intent using an LLM
+- Retrieves relevant information from uploaded documents using RAG
+- Stores semantic document embeddings in a vector database
+- Maintains conversational memory for contextual interactions
+- Uses AI Agents to plan and execute multi-step tasks (calculation, web search)
+- Produces grounded, explainable, and context-aware responses
 
----
+#
 
-# 🏗️ LangGraph Workflow
+### ◈ LangGraph Workflow
 
 The assistant uses a conditional LangGraph workflow:
 
@@ -69,8 +69,9 @@ The assistant uses a conditional LangGraph workflow:
    - Generate the final response.
 6. Return the answer to the user.
 
-Flow:
+**Flow:**
 
+```text
     START
       |
       v
@@ -108,11 +109,13 @@ Flow:
                       |
                       v
                      END
+```
 
----
+#
 
-# 🧩 Final Graph Architecture
+### ◈ Final Graph Architecture
 
+```text
                           START
                             |
                             v
@@ -140,12 +143,13 @@ Flow:
                     |
                     v
                    END
-                   
----
+```
 
-# ⚙️ Installation
+#
 
-## 1. Clone the repository
+### ◈ ⚙️ Installation
+
+#### 1. Clone the repository
 
 ```bash
 git clone https://github.com/<your-username>/ResearchMind-AI.git
@@ -155,39 +159,39 @@ git clone https://github.com/<your-username>/ResearchMind-AI.git
 cd ResearchMind-AI
 ```
 
----
+#
 
-## 2. Create a virtual environment
+#### 2. Create a virtual environment
 
 ```bash
 uv venv
 ```
 
-Activate it:
+Activate it.
 
-### Windows
+**Windows**
 
 ```bash
 .venv\Scripts\activate
 ```
 
-### Linux / macOS
+**Linux / macOS**
 
 ```bash
 source .venv/bin/activate
 ```
 
----
+#
 
-## 3. Install dependencies
+#### 3. Install dependencies
 
 ```bash
 uv sync
 ```
 
----
+#
 
-## 4. Configure environment variables
+#### 4. Configure environment variables
 
 Create a `.env` file in the project root.
 
@@ -196,29 +200,29 @@ OPENAI_API_KEY=your_api_key_here
 TAVILY_API_KEY=your_api_key_here
 ```
 
----
+#
 
-## 5. Run the backend 
+#### 5. Run the backend
 
 ```bash
 uv run uvicorn app.main:app --reload
 ```
 
-## 6. Run the frontend   
+#### 6. Run the frontend
 
-```
-streamlit run .\frontend\app.py  
+```bash
+streamlit run .\frontend\app.py
 ```
 
 Open:
 
-```
+```text
 http://localhost:8501/
 ```
 
----
+#
 
-# 📄 License
+### ◈ License
 
 This project is licensed under the **GNU General Public License v3.0 (GPL-3.0)**.
 
