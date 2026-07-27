@@ -11,14 +11,6 @@
 
 #
 
-### ◈ Project Activity
-
-<p align="center">
-  <img src="https://repobeats.axiom.co/api/embed/a0a7e8fd02396532dac0a7b66a133e0418424791.svg" alt="Repobeats analytics image" />
-</p>
-
-#
-
 ### ◈ Overview
 
 ResearchMind AI is a production-inspired AI research assistant that combines:
