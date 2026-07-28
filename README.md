@@ -1,4 +1,4 @@
-## ResearchMind AI
+## ResearchMind.AI
 
 #### An intelligent AI research assistant powered by LLMs, RAG, and LangGraph for document understanding, reasoning, and context-aware answers.
 
