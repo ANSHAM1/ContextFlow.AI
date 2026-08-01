@@ -11,6 +11,12 @@
 
 #
 
+<p align="center">
+  <img src="./flowdiagram.png" alt="ContextFlow.AI Workflow" width="100%">
+</p>
+
+#
+
 ### ◈ Overview
 
 ContextFlow AI is a production-inspired AI research assistant that combines:
