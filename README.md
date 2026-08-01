@@ -12,7 +12,7 @@
 #
 
 <p align="center">
-  <img src="./flowdiagram.png" alt="ContextFlow.AI Workflow" width="100%">
+  <img src="./flowdiagrams.png" alt="ContextFlow.AI Workflow" width="100%">
 </p>
 
 #
@@ -74,82 +74,6 @@ The assistant uses a conditional LangGraph workflow:
    - Return the tool result to the chatbot.
    - Generate the final response.
 6. Return the answer to the user.
-
-**Flow:**
-
-```text
-    START
-      |
-      v
-    router_node
-      |
-      |---- no rag ----> chatbot_node ----+
-      |                                   |
-      |                           Tool Required?
-      |                            /         \
-      |                          Yes         No
-      |                           |           |
-      |                           v           v
-      |                      tool_node       END
-      |                           |
-      |                           v
-      |                     chatbot_node
-      |                           |
-      |                           v
-      |                          END
-      |
-      |---- rag -------> rag_node
-                            |
-                            v
-                       chatbot_node
-                            |
-                     Tool Required?
-                       /         \
-                     Yes         No
-                      |           |
-                      v           v
-                 tool_node       END
-                      |
-                      v
-                chatbot_node
-                      |
-                      v
-                     END
-```
-
-#
-
-### ◈ Final Graph Architecture
-
-```text
-                          START
-                            |
-                            v
-                      router_node
-                     /            \
-                USE_RAG         NO_RAG
-                   |               |
-                   v               |
-              rag_node             |
-                   |               |
-                   +-------+-------+
-                           |
-                           v
-                     chatbot_node
-                           |
-                  Tool Required?
-                     /         \
-                   Yes         No
-                    |           |
-                    v           v
-                tool_node      END
-                    |
-                    v
-              chatbot_node
-                    |
-                    v
-                   END
-```
 
 #
 
