@@ -1,4 +1,4 @@
-## ResearchMind.AI
+## ContextFlow.AI
 
 #### An intelligent AI research assistant powered by LLMs, RAG, and LangGraph for document understanding, reasoning, and context-aware answers.
 
@@ -13,7 +13,7 @@
 
 ### ◈ Overview
 
-ResearchMind AI is a production-inspired AI research assistant that combines:
+ContextFlow AI is a production-inspired AI research assistant that combines:
 
 - Large Language Models (LLMs)
 - Retrieval-Augmented Generation (RAG)
@@ -40,7 +40,7 @@ Traditional LLM chatbots have limitations:
 
 ### ◈ Solution
 
-ResearchMind AI addresses these challenges by integrating several modern AI techniques into a unified system.
+ContextFlow AI addresses these challenges by integrating several modern AI techniques into a unified system.
 
 The application:
 
@@ -152,11 +152,11 @@ The assistant uses a conditional LangGraph workflow:
 #### 1. Clone the repository
 
 ```bash
-git clone https://github.com/<your-username>/ResearchMind-AI.git
+git clone https://github.com/<your-username>/ContextFlow-AI.git
 ```
 
 ```bash
-cd ResearchMind-AI
+cd ContextFlow-AI
 ```
 
 #
